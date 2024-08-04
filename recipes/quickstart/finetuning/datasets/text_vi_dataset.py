@@ -42,7 +42,7 @@ def tokenize_dialog(dialog, tokenizer):
 
 
 def get_custom_dataset(dataset_config, tokenizer, split):
-    dataset = datasets.load_dataset("vinhpx/text_dataset", split=split)
+    dataset = datasets.load_dataset("vinhpx/text_vi_dataset", split=split)
         
     dataset = dataset.map(lambda x: tokenize_dialog(x["messages"], tokenizer), remove_columns=list(dataset.features))
 
