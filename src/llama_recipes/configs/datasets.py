@@ -32,7 +32,15 @@ class custom_dataset:
     train_split: str = "train"
     test_split: str = "validation"
     data_path: str = ""
-    
+
+@dataclass
+class text_vi_dataset:
+    dataset: str = "text_vi_dataset"
+    file: str = "recipes/quickstart/finetuning/datasets/text_vi_dataset.py"
+    train_split: str = "train"
+    test_split: str = "validation"
+    data_path: str = ""
+
 @dataclass
 class llamaguard_toxicchat_dataset:
     dataset: str = "llamaguard_toxicchat_dataset"
