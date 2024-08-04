@@ -38,7 +38,7 @@ class text_vi_dataset:
     dataset: str = "text_vi_dataset"
     file: str = "recipes/quickstart/finetuning/datasets/text_vi_dataset.py"
     train_split: str = "train"
-    test_split: str = "validation"
+    test_split: str = "test"
     data_path: str = ""
 
 @dataclass
